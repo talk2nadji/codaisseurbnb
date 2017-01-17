@@ -17,6 +17,13 @@
     <h4>About</h4>
     <p><%= @room.description %></p>
 
+    <!-- Themes -->
+    <h4>Themes</h4>
+    <% @themes.each do |theme| %>
+      <span class="label label-success"><%= theme.name %></span>
+    <% end %>
+
+
     <!-- Amenities -->
     <h4>Amenities</h4>
     <ul class="amenities">
