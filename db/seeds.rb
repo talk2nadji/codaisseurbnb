@@ -5,9 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.delete_all
-Room.delete_all
 Theme.delete_all
+Room.delete_all
+User.delete_all
 
 modern_and_minimal = Theme.create(name: "Modern and Minimal")
 sleek_and_sophisticated = Theme.create(name: "Sleek and Sophisticated")

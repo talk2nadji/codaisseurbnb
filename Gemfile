@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.3.1'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -67,3 +68,5 @@ end
 group :test do
   gem 'capybara', '~> 2.9', '>= 2.9.1'
 end
+
+gem 'rails_12factor', group: :production
