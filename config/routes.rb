@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+
+  resources :photos
   resources :users, only: [:show]
   resources :rooms
   resources :profiles, only: [:new, :edit, :create, :update]
